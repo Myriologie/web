@@ -1,0 +1,61 @@
+<!-- para usar html, lo abrimos -->
+<html>
+  <!-- abrir parte invisible de comunicacion con google por ejemplo -->
+  <head>
+    <!-- cambiar nombre que aparece en el navegador -->
+    <title>COMUNICADOR</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- incluir un codigo (aqui mi javascript) -->
+    <script src="js/index.js"></script>
+    <!-- cerrar head -->
+  </head>
+  <!-- parte visible de la web -->
+  <body>
+    <!-- hay 6 titulos posibles (cambia la talla de la letra)-->
+    <h1>COMUNICADOR</h1>
+    <!-- p=paragrafo -->
+    <p> pulsa sobre la imagen que quieras y sonara su contenido </p>
+    <!-- crear una tabla -->
+    <table>
+      <!-- lineas -->
+      <tr>
+        <!-- columnas -->
+        <td>
+          <!-- incertar una imagen y definir su altura -->
+          <img src="media/images/caballo.png" onclick="reproducirSonido('media/sounds/caballo.mp3');" height=200>
+          <p>
+          caballo
+          </p>
+        </td>
+        <td>
+          <!-- incertar una imagen y definir su altura -->
+          <img src="media/images/piscina.png" onclick="reproducirSonido('media/sounds/piscina.mp3');" height=200>
+          <p>
+          piscina
+          </p>
+        </td>
+        <!-- cerrar lineas -->
+      </tr>
+      <tr>
+        <!-- columnas -->
+        <td>
+          <!-- incertar una imagen y definir su altura -->
+          <img src="media/images/beber.png" onclick="reproducirSonido('media/sounds/beber.mp3');" height=200>
+          <p>
+          beber
+          </p>
+        </td>
+        <td>
+          <!-- incertar una imagen y definir su altura -->
+          <img src="media/images/comer.png" onclick="reproducirSonido('media/sounds/comer.mp3');" height=200>
+          <p>
+          comer
+          </p>
+        </td>
+        <!-- cerrar lineas -->
+      </tr>
+    </table>
+
+  </body>
+  <!-- cerrar etiqueta html -->
+</html>
